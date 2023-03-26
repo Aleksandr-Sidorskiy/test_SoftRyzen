@@ -1,5 +1,9 @@
+// utils
 @import './utils/variables';
 @import './common';
 @import './example';
+// base
 @import './base/base-styles';
 @import './base/reset';
+// layout 
+@import './layout/header'

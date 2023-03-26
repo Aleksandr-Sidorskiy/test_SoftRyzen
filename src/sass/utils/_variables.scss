@@ -9,3 +9,28 @@ $buttonHover: #427351;
 $fontFamilyText: 'Ubuntu';
 $fontFamilyTitle: 'Oswald';
 
+.button{
+font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.06em;
+
+    width: 273px;
+    text-align: center;
+    
+    padding: 10px 0 10px 0;
+    border-radius: 50px;
+    color: $colorText;
+    border: 1px solid $buttonHover;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        border: none;
+        background-color: $buttonHover;
+    }
+}
+
+
