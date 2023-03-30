@@ -10,7 +10,7 @@
     padding-top: 41px;
     padding-bottom: 120px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -31,6 +31,7 @@
 
 .nav__link{
     color: $colorText;
+    transition:color 150ms linear, border 150ms linear;
     &:hover,
     &:focus {
         color: $buttonHover;
@@ -49,6 +50,7 @@
 }
 
 .header__box-item {
+    transition: fill 150ms linear;
     &:hover,
     &:focus {
         fill: $buttonHover;
