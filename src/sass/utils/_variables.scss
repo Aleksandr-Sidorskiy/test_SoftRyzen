@@ -25,6 +25,8 @@ font-family: 'Oswald';
     color: $colorText;
     border: 1px solid $buttonHover;
 
+    transition: color 250ms linear, border 250ms linear, background-color 250ms linear;
+
     &:hover,
     &:focus {
         color: #fff;
