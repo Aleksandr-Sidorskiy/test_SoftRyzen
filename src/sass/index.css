@@ -1,0 +1,259 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.button {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.06em;
+  width: 273px;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  border-radius: 50px;
+  color: #000000;
+  border: 1px solid #427351;
+  transition: color 250ms linear, border 250ms linear, background-color 250ms linear;
+}
+.button:hover, .button:focus {
+  color: #fff;
+  border: none;
+  background-color: #427351;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #F5F5F5;
+  color: #000000;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.hero-header {
+  min-height: 810px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F5F5F5;
+  background-image: url(../images/backgroundImage/skin-care-cosmetology-products\ 2.png);
+}
+
+.header {
+  padding-top: 41px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.06em;
+}
+
+.nav__link {
+  color: #000000;
+  transition: color 150ms linear, border 150ms linear;
+}
+.nav__link:hover, .nav__link:focus {
+  color: #427351;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #427351;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.header__box-list {
+  display: flex;
+}
+
+.header__box-item {
+  transition: fill 150ms linear;
+  cursor: pointer;
+}
+.header__box-item:hover, .header__box-item:focus {
+  fill: #427351;
+}
+
+.header__box-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.hero__title {
+  margin-bottom: 60px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 107px;
+  letter-spacing: 0.03em;
+}
+
+.hero__text {
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 127%;
+}
+
+.button:not(:last-child) {
+  margin-right: 52px;
+}
+
+.catalog__header {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 111px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.catalog__carousel {
+  width: 1300px;
+  position: relative;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  top: 50%;
+  border-top: 5px black solid;
+  border-left: 5px black solid;
+  border-radius: 3px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.prev {
+  transform: rotate(-45deg);
+  left: 0px;
+}
+
+.next {
+  right: 0px;
+  transform: rotate(135deg);
+}
+
+.catalog__gallery {
+  width: 1230px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.catalog__list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+
+.catalog__item {
+  flex: 0 0 25%;
+  max-width: 23%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.catalog__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.catalog__img {
+  max-width: 300px;
+  display: block;
+  border-radius: 20px;
+  margin-bottom: 53px;
+}/*# sourceMappingURL=index.css.map */
