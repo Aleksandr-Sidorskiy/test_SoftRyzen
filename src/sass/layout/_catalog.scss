@@ -1,17 +1,8 @@
-// .catalog__header{
-//     font-family: 'Oswald';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 72px;
-//     line-height: 111px;
-//     text-align: center;
-//     letter-spacing: 0.06em;
-// }
+
 
 .catalog__carousel{
-    // width: 1300px;
     position: relative; 
-margin: 0 auto;
+    margin: 0 auto;
 }
 
 .btn{
@@ -41,7 +32,6 @@ margin: 0 auto;
 }
 
 .catalog__gallery{  
-    // width: 1230px;
     overflow: hidden;
     display: inline-block;
 }
@@ -50,12 +40,6 @@ margin: 0 auto;
     display: flex;
    justify-content: center;
    align-items: baseline;
-    // padding: 0;
-    // list-style: none;
-    // transition: margin-left 250ms;
-    // font-size: 0;
-    // margin-left: auto;
-    // margin-right: auto;
 }
 
 .catalog__item{
