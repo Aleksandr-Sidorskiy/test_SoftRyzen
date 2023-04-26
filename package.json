@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://aleksandr-sidorskiy.github.io/natural_cosmetics",
+  "homepage": "https://aleksandr-sidorskiy.github.io/test_SoftRyzen",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /natural_cosmetics/"
+    "build": "parcel build src/*.html --public-url /test_SoftRyzen/"
   },
   "repository": {
     "type": "git",
