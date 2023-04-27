@@ -4,31 +4,41 @@
     padding-right: 20px;
     padding-left: 20px;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
+    @media screen and (min-width: 320px) {
+        width: 320px;
     }
 
     @media screen and (min-width: 768px) {
         width: 768px;
-        padding-right: 35px;
-        padding-left: 35px;
+        padding-right: 32px;
+        padding-left: 32px;
     }
 
-    @media screen and (min-width: 1440px) {
-        width: 1440px;
-        padding-right: 80px;
-        padding-left: 80px;
+    @media screen and (min-width: 1360px) {
+        width: 1360px;
+        padding-right: 28px;
+        padding-left: 28px;
     }
 }
-
+ 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media screen and (min-width: 320px) {
+        padding-top:50px;
+        padding-bottom:50px;
+        }
+
+    
+        @media screen and (min-width: 1360px) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
 
 }
 
 h2 {
-    font-family: 'Oswald';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
@@ -39,7 +49,7 @@ h2 {
 }
 
 p {
-    font-family: 'Ubuntu';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -50,28 +60,3 @@ p {
 margin-bottom: 60px;
 }
 
-.button {
-    font-family: 'Oswald';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 44px;
-    letter-spacing: 0.06em;
-
-    width: 273px;
-    text-align: center;
-
-    padding: 10px 0 10px 0;
-    border-radius: 50px;
-    color: $colorText;
-    border: 1px solid $buttonHover;
-
-    transition: color 250ms linear, border 250ms linear, background-color 250ms linear;
-
-    &:hover,
-    &:focus {
-        color: #fff;
-        border: none;
-        background-color: $buttonHover;
-    }
-}

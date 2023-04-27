@@ -1,45 +1,45 @@
-footer{
-    padding: 106px 0 106px 0;
+// footer{
+//     padding: 106px 0 106px 0;
 
-    background-color: $footerBackground;
+//     background-color: $footerBackground;
 
-}
+// }
 
-.footer{
-    display: flex;
-    justify-content: space-between;
-}
+// .footer{
+//     display: flex;
+//     justify-content: space-between;
+// }
 
-.footer__nav{
-    display: flex;
+// .footer__nav{
+//     display: flex;
     
-}
+// }
 
-.footer__navList{
-    &:not(:last-child) {
-            margin-right: 100px;
-        }
-}
+// .footer__navList{
+//     &:not(:last-child) {
+//             margin-right: 100px;
+//         }
+// }
 
-.footer__navItem{
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22.7133px;
-    line-height: 26px;
-    &:not(:last-child) {
-            margin-bottom: 10px;
-        }
-}
+// .footer__navItem{
+//     font-family: 'Ubuntu';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 22.7133px;
+//     line-height: 26px;
+//     &:not(:last-child) {
+//             margin-bottom: 10px;
+//         }
+// }
 
-.footer__socialList{
-    display: flex;
+// .footer__socialList{
+//     display: flex;
     
-}
+// }
 
-.footer__socialItem{
-    fill: $buttonHover;
-    &:not(:last-child) {
-            margin-right: 20px;
-        }
-}
+// .footer__socialItem{
+//     fill: $buttonHover;
+//     &:not(:last-child) {
+//             margin-right: 20px;
+//         }
+// }
