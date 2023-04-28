@@ -1,4 +1,5 @@
 .solutions{
+    padding-bottom: 79px;
 
     background-color: $buttonColor; 
 }
@@ -16,10 +17,20 @@
     background-color: $buttonColor;
 }
 
-.solutions__text{
-    margin-top: -3px;
-    padding-top: 79px;
+.solutions__first-title{
+    margin-top: 79px;
     margin-bottom: 16px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $colorTextPrimary;
+}
+
+.solutions__text{
+    margin-bottom: 24px;
 
     font-style: normal;
     font-weight: 400;
@@ -39,4 +50,21 @@
     line-height: 44px;
 
     color: $colorTextPrimary;
+}
+
+.solutions__btn{
+    padding: 16px 32px;
+
+    background-color: $buttonColor;
+    color: $colorTextPrimary;
+    border: 1px $colorTextPrimary solid;
+    border-radius: 5px;
+    transition:background-color 200ms linear ;
+
+    &:hover,
+    &:focus {
+        background-color: $buttonHover;
+
+        cursor: pointer;
+    }
 }
