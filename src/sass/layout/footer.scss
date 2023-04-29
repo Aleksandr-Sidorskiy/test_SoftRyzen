@@ -1,45 +1,14 @@
-// footer{
-//     padding: 106px 0 106px 0;
+.footer{
+    background-color: $backgroundFooter;
+}
 
-//     background-color: $footerBackground;
+.footer__social-list{
+    display: grid;
+    grid-template-columns: repeat(4, 35px);
+    grid-template-rows: repeat(1, 35px);
+    align-items: center;
+}
 
-// }
-
-// .footer{
-//     display: flex;
-//     justify-content: space-between;
-// }
-
-// .footer__nav{
-//     display: flex;
-    
-// }
-
-// .footer__navList{
-//     &:not(:last-child) {
-//             margin-right: 100px;
-//         }
-// }
-
-// .footer__navItem{
-//     font-family: 'Ubuntu';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 22.7133px;
-//     line-height: 26px;
-//     &:not(:last-child) {
-//             margin-bottom: 10px;
-//         }
-// }
-
-// .footer__socialList{
-//     display: flex;
-    
-// }
-
-// .footer__socialItem{
-//     fill: $buttonHover;
-//     &:not(:last-child) {
-//             margin-right: 20px;
-//         }
-// }
+.footer__social-item{
+    align-items: center;
+}

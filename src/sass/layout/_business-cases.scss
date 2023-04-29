@@ -1,14 +1,59 @@
-.busCases__first-title{}
+.busCases__first-title{
+    margin-bottom: 16px;
 
-.busCases__title{}
+    font-style: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 
-.busCases__text{}
+    text-align: center;
 
-.busCases__box{}
+    color: $colorTextSecondary;
+}
 
-.busCases__box-list{}
+.busCases__title{
+    margin-bottom: 24px;
 
-.busCases__box-item{}
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+
+    text-align: center;
+
+    color: $colorTextSecondary;
+}
+
+.busCases__text{
+    margin-bottom: 31px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+
+    color: $colorTextSecondary;
+}
+
+.busCases__box{
+    
+}
+
+.busCases__box-list{
+display: grid;
+grid-template-columns: 1fr;
+
+}
+
+.busCases__box-item{
+    align-self: center;
+    justify-self: center;
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
 
 .busCases__box-img{}
 

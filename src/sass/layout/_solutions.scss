@@ -1,5 +1,5 @@
 .solutions{
-    padding-bottom: 79px;
+    padding-bottom: 50px;
 
     background-color: $buttonColor; 
 }
@@ -18,7 +18,7 @@
 }
 
 .solutions__first-title{
-    margin-top: 79px;
+    margin-top: 50px;
     margin-bottom: 16px;
     
     font-style: normal;
@@ -59,12 +59,14 @@
     color: $colorTextPrimary;
     border: 1px $colorTextPrimary solid;
     border-radius: 5px;
-    transition:background-color 200ms linear ;
+    transition: 200ms linear ;
 
     &:hover,
-    &:focus {
-        background-color: $buttonHover;
-
-        cursor: pointer;
-    }
+        &:focus {
+            background-color: $colorTextPrimary;
+            color: $buttonColor;
+            border: 1px $buttonColor solid;
+    
+            cursor: pointer;
+        }
 }
