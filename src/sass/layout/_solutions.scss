@@ -1,16 +1,35 @@
 .solutions{
-    padding-bottom: 50px;
-
     background-color: $buttonColor; 
+    @media screen and (max-width: 767px) {
+        padding-bottom: 50px;
+
+    }
+
+    @media screen and (min-width: 768px) {
+          display: flex;
+    
+        }
+    
 }
-.solutions__img-box{ 
-    display: flex;
-    justify-content: center;
+.solutions__img-box { 
+   
+    @media screen and (min-width: 768px) {
+        min-width: 358px;
+        height: 568px;
+    }
+
+    @media screen and (min-width: 1360px) {
+        height: 460px;
+        min-width: 670px;
+    }
 }
 
-.solutions__img{
-    display: inline-block;
-    
+.solutions__img-box > img{
+display: block;
+height: 100%;
+width: 100%;
+
+object-fit: cover;
 }
 
 .solutions__text-box{
@@ -25,8 +44,18 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    text-align: left;
 
     color: $colorTextPrimary;
+
+    @media screen and (min-width: 768px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+    @media screen and (min-width: 1360px) {
+        line-height: 33px;
+    }
 }
 
 .solutions__text{
@@ -38,6 +67,11 @@
     line-height: 22px;
 
     color: $colorTextPrimary;
+
+    @media screen and (min-width: 768px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
 }
 
 .solutions__title{
@@ -50,6 +84,12 @@
     line-height: 44px;
 
     color: $colorTextPrimary;
+
+    @media screen and (min-width: 768px) {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    
 }
 
 .solutions__btn{
@@ -62,11 +102,16 @@
     transition: 200ms linear ;
 
     &:hover,
-        &:focus {
-            background-color: $colorTextPrimary;
-            color: $buttonColor;
-            border: 1px $buttonColor solid;
-    
-            cursor: pointer;
-        }
+    &:focus {
+        background-color: $colorTextPrimary;
+        color: $buttonColor;
+        border: 1px $buttonColor solid;
+
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }

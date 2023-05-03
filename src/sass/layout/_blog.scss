@@ -1,15 +1,37 @@
 .blog{
-    padding-bottom: 50px;
-
     background-color: $buttonColorRead;
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 50px;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+    
+    }
 }
 
 .blog__img-box{
-    display: flex;
-    justify-content: center;
+    @media screen and (min-width: 768px) {
+            min-width: 358px;
+            height: 568px;
+        }
+    
+        @media screen and (min-width: 1360px) {
+            height: 460px;
+            min-width: 670px;
+        }
 }
 
-.blog__img{}
+.blog__img-box > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
 
 .blog__text-box{
     
@@ -26,6 +48,15 @@
     line-height: 22px;
 
     color: $colorTextPrimary;
+
+    @media screen and (min-width: 768px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    
+    @media screen and (min-width: 1360px) {
+        line-height: 33px;
+    }
 }
 
 .blog__title{
@@ -38,6 +69,11 @@
     line-height: 44px;
 
     color: $colorTextPrimary;
+
+    @media screen and (min-width: 768px) {
+            font-size: 40px;
+            line-height: 48px;
+        }
 }
 
 .blog__text{
@@ -49,6 +85,11 @@
     line-height: 22px;
 
     color: $colorTextPrimary;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 
 .blog__btn{
@@ -67,5 +108,10 @@
         border: 1px $buttonColorRead solid;
 
         cursor: pointer;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 25px;
     }
 }

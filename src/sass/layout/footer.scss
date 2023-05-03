@@ -1,14 +1,39 @@
 .footer{
+    padding: 20px 0 20px 0;
     background-color: $backgroundFooter;
 }
 
 .footer__social-list{
+    margin-bottom: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 35px);
-    grid-template-rows: repeat(1, 35px);
-    align-items: center;
+    grid-template-columns: 35px 35px 35px 35px;
+    column-gap: 25px; 
+    justify-content: center;   
+        
+    
 }
 
-.footer__social-item{
-    align-items: center;
+.footer__social-item{ 
+    fill: $colorTextPrimary; 
+    &:hover,
+    &:focus{
+        fill: $buttonColor;
+        cursor: pointer;
+    }
+}
+
+.footer__copyright{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    text-align: center;
+    color: $colorTextPrimary;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
 }

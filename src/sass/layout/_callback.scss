@@ -1,40 +1,69 @@
 .callback{
-    padding-bottom: 50px;
     background-color: $backgroundCallback;
+@media screen and (max-width: 767px) {
+        padding-bottom: 50px;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .callback__box-img{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+            min-width: 358px;
+            height: 568px;
+        }
+
+    @media screen and (min-width: 1360px) {
+        height: 460px;
+        min-width: 670px;
+    }
     
 }
 
+.callback__box-img>img{
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
 .callback__title{
+    margin-top: 51px;
     margin-bottom: 69px;
 
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 48px;
+    text-align: left;
 
     color: $colorTextSecondary;
+
+    @media screen and (min-width: 768px) {
+        
+            font-size: 40px;
+            line-height: 48px;
+        }
 }
 
 .callback__form{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    justify-content: start;
 }
 
 .callback__form-label{
-    &:not(:last-child) {
-        margin-bottom: 16px;
-    }
+    width: 100%;
+    margin-bottom: 16px;    
 }
 
 .callback__form-input{
-    width: 280px;
+    width: 100%;
     padding: 16px 8px;
     
     border: none;
@@ -53,6 +82,7 @@ input[type="email"]::placeholder  {
 
 .callback__btn{
     padding: 16px 56px;
+    margin-top: 24px;
 
     background-color: $buttonColor;
     border-radius: 5px;
@@ -61,4 +91,11 @@ input[type="email"]::placeholder  {
     &:hover,&:focus{
         background-color: $buttonHover;
     }
+        @media screen and (min-width: 768px) {
+            margin-top: 33px;
+        }
+
+        @media screen and (min-width: 1360px) {
+            margin-top: 70px;
+        }
 }
