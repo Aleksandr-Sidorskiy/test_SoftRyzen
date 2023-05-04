@@ -7,11 +7,16 @@ new Swiper('.busCases__box', {
   },
   pagination: {
     el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
-    },
+    // clickable: true,
+    // dynamicBullets: true,
+    // renderBullet: function (index, className) {
+    //   return '<span class="' + className + '">' + (index + 1) + '</span>';
+    // },
+    type: 'fraction',
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
   },
 });
 // import { galleryItems } from './gallery';

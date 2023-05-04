@@ -53,6 +53,7 @@
 }
 
 .busCases__box-list{
+    padding: 30px;
     max-width: 500px;
     min-width: 0;
     margin: 0 auto;
@@ -79,4 +80,16 @@
     justify-content: center;
 }
 
+.busCases__box .swiper-button-prev::after, .swiper-button-next::after{
+    color: #212121;
+    font-size: 50px;
+}
 
+.busCases__box .swiper-pagination{
+    bottom: 0;
+}
+
+.swiper-pagination-fraction{
+    font-size: 20px;
+    color: #212121;
+}
